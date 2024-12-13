@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Card } from '../ui/card';
+import { Card } from '../ui/Card';
 import { 
   Smartphone,
   Globe,
