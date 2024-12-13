@@ -35,7 +35,7 @@ export default function Hero() {
             >
               <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600" style={{
                 color: "black"
-              }}>
+              }}>Hey, Fredrick here <br/>
                 Full-Stack Developer
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed" style={{color: "black"}}>
