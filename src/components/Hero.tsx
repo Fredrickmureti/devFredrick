@@ -41,7 +41,7 @@ export default function Hero() {
             color: "black"
           }}
         >
-          Full Stack Developer & 3D Enthusiast
+          Full Stack Developer 
         </motion.p>
         
         <motion.div
@@ -53,7 +53,7 @@ export default function Hero() {
           <a href="https://github.com/Fredrickmureti" className="hover:text-purple-400 transition-colors">
             <Github size={28} />
           </a>
-          <a href="https://linkedin.com/fredrickmureti" className="hover:text-purple-400 transition-colors">
+          <a href="https://www.linkedin.com/in/fredrick-mureti-95bb5423a" className="hover:text-purple-400 transition-colors">
             <Linkedin size={28} />
           </a>
           <a href="mailto:fredrickmureti612@gmail.com" className="hover:text-purple-400 transition-colors">

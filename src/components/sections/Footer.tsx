@@ -15,11 +15,11 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <div className="space-y-2">
               <a
-                href="mailto:contact@example.com"
+                href="mailto:fredrickmureti612@gmail.com"
                 className="flex items-center text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Mail className="h-4 w-4 mr-2" />
-                contact@example.com
+                fredrickmureti612@gmail.com
               </a>
             </div>
           </div>
@@ -29,7 +29,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
             <div className="flex space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/Fredrickmureti"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -37,7 +37,7 @@ const Footer = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/fredrick-mureti-95bb5423a"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -69,7 +69,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t flex flex-col-reverse md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground mt-4 md:mt-0">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} DevFredrick. All rights reserved.
           </p>
           <Button
             variant="ghost"
