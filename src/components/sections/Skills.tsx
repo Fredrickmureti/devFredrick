@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Progress } from '../ui/progress';
+import { Progress } from '../ui/Progress';
 import SkillsChart from './skills-chart';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './../ui/tabs';
 
