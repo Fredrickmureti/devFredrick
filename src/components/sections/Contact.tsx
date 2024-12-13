@@ -16,6 +16,7 @@ import {
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
 import { useToast } from '../ui/useToast';
+import emailjs from 'emailjs-com'; // Import EmailJS
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -35,11 +36,35 @@ export default function Contact() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    toast({
-      title: 'Message sent!',
-      description: 'Thank you for your message. I will get back to you soon.',
-    });
-    form.reset();
+    const serviceID = '7-0YJKZU5SZu9DQVdOzp_'; // Replace with your actual service ID
+    const templateID = 'template_r7h4bxe'; 
+    const userID = 'JfkvrQxVDdNssdmEH'; // Replace with your actual user ID
+
+    if (!serviceID || !templateID || !userID) {
+      console.error('EmailJS configuration is missing.');
+      toast({
+        title: 'Error',
+        description: 'EmailJS configuration is missing. Please check your setup.',
+      });
+      return;
+    }
+
+    // Send email using EmailJS
+    emailjs.send(serviceID, templateID, values, userID)
+      .then(() => {
+        toast({
+          title: 'Message sent!',
+          description: 'Thank you for your message. I will get back to you soon.',
+        });
+        form.reset();
+      })
+      .catch((error) => {
+        toast({
+          title: 'Error sending message',
+          description: 'Please try again later.',
+        });
+        console.error('EmailJS error:', error);
+      });
   }
 
   return (
