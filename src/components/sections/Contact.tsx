@@ -36,7 +36,7 @@ export default function Contact() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    const serviceID = '7-0YJKZU5SZu9DQVdOzp_'; // Replace with your actual service ID
+    const serviceID = 'service_30ve1vw'; // Replace with your actual service ID
     const templateID = 'template_r7h4bxe'; 
     const userID = 'JfkvrQxVDdNssdmEH'; // Replace with your actual user ID
 
