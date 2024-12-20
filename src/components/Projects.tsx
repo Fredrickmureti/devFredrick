@@ -3,8 +3,8 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with React and Node.js",
+    title: "Motorcyle and cars website",
+    description: "A full-stack motorcyle and cars website solution with React and Node.js",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c",
     github: "https://github.com",
     live: "https://example.com"

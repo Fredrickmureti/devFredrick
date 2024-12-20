@@ -129,7 +129,9 @@ export default function Contact() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full">
+              <Button type="submit" className="w-full" style={{
+                border: "1px black solid"
+              }}>
                 Send Message
               </Button>
             </form>
