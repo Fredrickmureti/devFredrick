@@ -35,7 +35,7 @@ export default function About() {
           >
             <h3 className="text-2xl font-semibold">Passionate Developer</h3>
             <p className="text-gray-700 dark:text-gray-300">
-              With over 5 years of experience in web development, I specialize in creating
+              With over 2 years of experience in web development, I specialize in creating
               beautiful and functional applications that solve real-world problems.
             </p>
             
