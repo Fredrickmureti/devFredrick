@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "https://dev-fredrick.vercel.app/(.*)",
+      "destination": "https://www.devfredrick.me/$1",
+      "permanent": true
+    }
+  ]
+}
