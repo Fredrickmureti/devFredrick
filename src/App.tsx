@@ -25,10 +25,10 @@ function App() {
         <About />
         <Skills />
         <Services />
-        <Projects />
-        <Timeline/>
+        {/* <Projects /> */}
+        {/* <Timeline/> */}
         <Certificates />
-        <Testimonials/>
+        {/* <Testimonials/> */}
         <Blog/>
         <Contact/>
         <Footer />

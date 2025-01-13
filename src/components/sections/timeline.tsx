@@ -22,36 +22,36 @@ const timelineEvents: TimelineEvent[] = [
   },
   {
     year: '2023',
-    title: 'Tech Lead',
-    company: 'Innovation Labs',
-    description: 'Spearheaded the development of AI-powered analytics platform.',
+    title: 'Web Developer',
+    company: 'Boma net',
+    description: 'Created and maintained the website.',
     icon: Briefcase,
     type: 'work'
   },
-  {
-    year: '2022',
-    title: 'Best Mobile App Award',
-    company: 'Tech Awards 2022',
-    description: 'Received award for innovative mobile application development.',
-    icon: Award,
-    type: 'achievement'
-  },
+  // {
+  //   year: '2022',
+  //   title: 'Best Mobile App Award',
+  //   company: 'Tech Awards 2022',
+  //   description: 'Received award for innovative mobile application development.',
+  //   icon: Award,
+  //   type: 'achievement'
+  // },
   {
     year: '2021',
-    title: 'Full Stack Developer',
-    company: 'Digital Solutions Co.',
+    title: 'Full Stack Web Developer',
+    company: 'Boma net',
     description: 'Developed enterprise-level web applications using modern technologies.',
     icon: Briefcase,
     type: 'work'
   },
-  {
-    year: '2020',
-    title: 'MSc in Computer Science',
-    company: 'Tech University',
-    description: 'Specialized in Artificial Intelligence and Machine Learning.',
-    icon: GraduationCap,
-    type: 'education'
-  }
+  // {
+  //   year: '2020',
+  //   title: 'MSc in Computer Science',
+  //   company: 'Tech University',
+  //   description: 'Specialized in Artificial Intelligence and Machine Learning.',
+  //   icon: GraduationCap,
+  //   type: 'education'
+  // }
 ];
 
 const TimelineEvent = ({ year, title, company, description, icon: Icon, type }: TimelineEvent) => {

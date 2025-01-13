@@ -14,7 +14,7 @@ interface Certification {
 
 const certifications: Certification[] = [
   {
-    title: "AWS Certified Solutions Architect Professional",
+    title: "FreeCodeCamp Backend Development and APIs",
     organization: "Amazon Web Services",
     date: "2023",
     logo: "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?auto=format&fit=crop&q=80&w=200",
@@ -22,7 +22,7 @@ const certifications: Certification[] = [
     description: "Advanced certification for designing distributed systems on AWS"
   },
   {
-    title: "Google Cloud Professional Architect",
+    title: "FreeCodecamp Responsive Web design",
     organization: "Google Cloud",
     date: "2023",
     logo: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&q=80&w=200",
@@ -30,10 +30,10 @@ const certifications: Certification[] = [
     description: "Expert-level certification for Google Cloud architecture"
   },
   {
-    title: "Meta React Native Developer",
+    title: "FreeCodeCamp FrontendDevelopment Libraries",
     organization: "Meta",
     date: "2022",
-    logo: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=200",
+    logo: "/public/Frontend_web_design.png",
     credentialUrl: "#",
     description: "Professional certification for React Native development"
   }
