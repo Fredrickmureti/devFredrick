@@ -5,15 +5,15 @@ import About from './components/sections/About';
 import Skills from './components/sections/Skills';
 import Services from './components/sections/Services';
 //import Experience from './components/sections/Experience';
-import Projects from './components/sections/Projects';
+// import Projects from './components/sections/Projects';
 import Certificates from './components/sections/Certificates';
 import Footer from './components/sections/Footer';
 import LoadingSpinner from './components/ui/LoadingSpinner';
 import { ThemeProvider } from './components/ui/theme-provider';
-import Testimonials from './components/sections/testimonials';
+// import Testimonials from './components/sections/testimonials';
 import Blog from './components/sections/Blog';
 import Contact from './components/sections/Contact';
-import Timeline from './components/sections/timeline';
+// import Timeline from './components/sections/timeline';
 
 function App() {
   return (

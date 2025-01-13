@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Card } from '../ui/Card';
-import { Briefcase, GraduationCap, Award, Calendar } from 'lucide-react';
+import { Briefcase,  Calendar } from 'lucide-react';
 
 interface TimelineEvent {
   year: string;
