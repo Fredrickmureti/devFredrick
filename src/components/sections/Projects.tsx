@@ -105,6 +105,14 @@ const projects = [
     demoUrl: 'https://tic-tac-toe-hazel-five.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/Tic-Tac-Toe',
   },
+  {
+    title: 'Motorcycle Sales Platform',
+    description: 'Welcome to the Motorcycle Sales Platform, a comprehensive solution for buying and selling motorcycles. This platform is built using the MERN stack (MongoDB, Express, React, Node.js) and is designed to provide a seamless experience for both buyers and sellers.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739225536/Macbook-Air-motorcycle-arena.vercel.app_uldaus.png',
+    tags: ['JavaScript', 'React','CSS', 'Nodejs', 'MongoDB', 'Expressjs', 'Cloudinary'],
+    demoUrl: 'https://motorcycle-arena.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/motorcycle-sales',
+  },
 ];
 
 
