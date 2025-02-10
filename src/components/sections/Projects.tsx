@@ -13,7 +13,7 @@ const projects = [
     title: 'Readme Generator Pro',
     description: 'A professional README generator built with React and TypeScript that helps developers create beautiful, comprehensive README files for their GitHub projects.',
     image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739186314/Macbook-Air-readme-generator-pro.vercel.app_ivieui.png',
-    tags: ['Javascript', 'TypeScript', 'TailwindCSS', 'React'],
+    tags: ['JavaScript', 'TypeScript', 'TailwindCSS', 'React'],
     demoUrl: 'https://readme-generator-pro.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/Readme_Generator_Pro',
   },
@@ -21,35 +21,36 @@ const projects = [
     title: 'Dev Utils Hub',
     description: 'A comprehensive collection of developer utilities designed to streamline your workflow. This application provides various tools that developers frequently need, all in one place.',
     image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739184931/Macbook-Air-dev-utils-hub.vercel.app_wux06h.png',
-    tags: ['React', 'Tailwind CSS', 'Typescript', ],
+    tags: ['React', 'Tailwind CSS', 'TypeScript'],
     demoUrl: 'https://dev-utils-hub.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/Dev_Utils_Hub',
   },
   {
-     title: 'Share Prompts',
+    title: 'Share Prompts',
     description: 'Share Prompts is a web application that allows users to share and explore creative prompts. This project is built using Next.js, React, and Tailwind CSS, with MongoDB as the database.',
     image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739185594/Macbook-Air-promptshare-platform.vercel.app_zb5nhx.png',
-    tags: ['React', 'Tailwind CSS', 'Typescript', 'Nextjs', MongoDB', 'Javascript' ],
+    tags: ['React', 'Tailwind CSS', 'TypeScript', 'Next.js', 'MongoDB', 'JavaScript'],
     demoUrl: 'https://promptshare-platform.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/promptopia-',
   },
   {
-    title: 'Refine Dashbord',
+    title: 'Refine Dashboard',
     description: 'This project is a data-intensive application built using the Refine.dev framework. It provides a robust and flexible platform for managing and displaying data with a modern and intuitive interface.',
     image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739185941/Macbook-Air-refine-dashboard-sigma.vercel.app_mpw0tm.png',
-    tags: ['React', 'Refine', 'Typescript', 'Tailwind CSS'],
+    tags: ['React', 'Refine', 'TypeScript', 'Tailwind CSS'],
     demoUrl: 'https://refine-dashboard-sigma.vercel.app/',
-    githubUrl: 'https://github.com/Fredrickmureti/REFINE-DASHBOARD'
+    githubUrl: 'https://github.com/Fredrickmureti/REFINE-DASHBOARD',
   },
   {
-    title: 'Exrecise Tracker App',
+    title: 'Exercise Tracker App',
     description: 'Exercise Tracker App is a web application that allows users to log their activities, track their exercise routines, and receive notifications when scheduled activities are due.',
     image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739186607/Macbook-Air-exercise-tracker-arena.vercel.app_dg89u9.png',
-    tags: ['React', 'CSS', 'Javascript', 'Nodejs', 'Express', 'MongoDB'],
-    demoUrl: 'https://exercise-tracker-arena.vercel.app',
-    githubUrl: 'https://github.com/Fredrickmureti/exercise-tracker'
+    tags: ['React', 'CSS', 'JavaScript', 'Node.js', 'Express', 'MongoDB'],
+    demoUrl: 'https://exercise-tracker-arena.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/exercise-tracker',
   },
 ];
+
 
 const ProjectCard = ({ title, description, image, tags, demoUrl, githubUrl, featured, stars }: any) => {
   const [ref, inView] = useInView({
