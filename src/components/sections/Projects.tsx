@@ -113,6 +113,14 @@ const projects = [
     demoUrl: 'https://motorcycle-arena.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/motorcycle-sales',
   },
+  {
+    title: 'Forex Market Analyzer',
+    description: 'This project is a trading bot application that fetches real-time market data, performs analysis, and makes predictions using machine learning models. The application is built using Node.js for the backend, React for the frontend, and Python for the machine learning model.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739225757/Macbook-Air-market-analysis-platfom-front-end.vercel.app_quiix7.png',
+    tags: ['JavaScript', 'React','CSS', 'Nodejs', 'MongoDB', 'Expressjs', 'Python'],
+    demoUrl: 'https://market-analysis-platfom-front-end.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/market-analysis-platfom',
+  },
 ];
 
 
