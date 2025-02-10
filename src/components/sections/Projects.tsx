@@ -73,6 +73,14 @@ const projects = [
     demoUrl: 'https://markdown-previewer-roan-seven.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/Markdown-previewer',
   },
+   {
+    title: 'Drum Machine',
+    description: 'The Drum Machine is a simple web application that allows users to play different drum sounds using their keyboard or by clicking on buttons. The application features two sound banks and a control panel for power, volume, and sound bank toggling.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739224302/Macbook-Air-drum-machine-two-pi.vercel.app_pooka3.png',
+    tags: ['JavaScript', 'React', 'CSS'],
+    demoUrl: 'https://drum-machine-two-pi.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/Drum-Machine',
+  },
 ];
 
 
