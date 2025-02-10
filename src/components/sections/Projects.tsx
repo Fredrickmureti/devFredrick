@@ -10,62 +10,13 @@ import { Key } from 'react';
 
 const projects = [
   {
-    title: 'E-Commerce Mobile App',
-    description: 'A full-featured e-commerce mobile application built with React Native and Node.js. Includes features like product search, cart management, and secure payments.',
-    image: 'https://images.unsplash.com/photo-1523206489230-c012c64b2b48?auto=format&fit=crop&q=80&w=800',
-    tags: ['React Native', 'Node.js', 'MongoDB', 'Stripe'],
-    demoUrl: '#',
-    githubUrl: '#',
-    featured: true,
-    stars: 128
+    title: 'Readme Generator Pro',
+    description: 'A professional README generator built with React and TypeScript that helps developers create beautiful, comprehensive README files for their GitHub projects.',
+    image: 'https://drive.google.com/file/d/1yPqEbVv1cjZc7DMNgbEeMvFXmiBVPQak/view?usp=sharing',
+    tags: ['Javascript', 'TypeScript', 'TailwindCSS'],
+    demoUrl: 'https://readme-generator-pro.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/Readme_Generator_Pro',
   },
-  {
-    title: 'Analytics Dashboard',
-    description: 'Interactive dashboard for real-time data visualization and analysis. Features include customizable widgets, data filtering, and export capabilities.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
-    tags: ['Next.js', 'TypeScript', 'D3.js', 'TailwindCSS'],
-    demoUrl: '#',
-    githubUrl: '#',
-    featured: true,
-    stars: 256
-  },
-  {
-    title: 'AI-Powered Chat Platform',
-    description: 'Real-time chat application with AI-powered features like message translation, sentiment analysis, and automated responses.',
-    image: 'https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&q=80&w=800',
-    tags: ['React', 'Socket.io', 'OpenAI', 'Redis'],
-    demoUrl: '#',
-    githubUrl: '#',
-    featured: true,
-    stars: 312
-  },
-  {
-    title: 'Cloud Infrastructure Manager',
-    description: 'Web application for managing and monitoring cloud infrastructure across multiple providers with cost optimization features.',
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
-    tags: ['Vue.js', 'AWS', 'Terraform', 'GraphQL'],
-    demoUrl: '#',
-    githubUrl: '#',
-    stars: 184
-  },
-  {
-    title: 'Blockchain Explorer',
-    description: 'Comprehensive blockchain explorer with real-time transaction monitoring and wallet management features.',
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800',
-    tags: ['Web3.js', 'React', 'Node.js', 'PostgreSQL'],
-    demoUrl: '#',
-    githubUrl: '#',
-    stars: 147
-  },
-  {
-    title: 'DevOps Automation Suite',
-    description: 'Collection of tools for automating development workflows, including CI/CD pipelines and infrastructure provisioning.',
-    image: 'https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?auto=format&fit=crop&q=80&w=800',
-    tags: ['Python', 'Docker', 'Kubernetes', 'Jenkins'],
-    demoUrl: '#',
-    githubUrl: '#',
-    stars: 203
-  }
 ];
 
 const ProjectCard = ({ title, description, image, tags, demoUrl, githubUrl, featured, stars }: any) => {
