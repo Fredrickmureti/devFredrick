@@ -15,11 +15,11 @@ interface Certification {
 const certifications: Certification[] = [
   {
     title: "FreeCodeCamp Backend Development and APIs",
-    organization: "Amazon Web Services",
+    organization: "FreeCodeCamp",
     date: "2023",
-    logo: "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?auto=format&fit=crop&q=80&w=200",
-    credentialUrl: "#",
-    description: "Advanced certification for designing distributed systems on AWS"
+    logo: "https://res.cloudinary.com/db3m7jneg/image/upload/v1739227606/BACKEND_t7xmt2.png",
+    credentialUrl: "https://www.freecodecamp.org/certification/devFredrickmureti/back-end-development-and-apis",
+    description: "certification for Backend development and APIs"
   },
   {
     title: "FreeCodecamp Responsive Web design",
