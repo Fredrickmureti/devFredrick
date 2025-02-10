@@ -26,6 +26,7 @@ const experiences = [
 ];
 
 
+
 export default function Experience() {
   return (
     <section id="experience" className="py-20 bg-white dark:bg-gray-900">
