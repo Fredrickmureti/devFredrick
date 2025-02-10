@@ -3,23 +3,20 @@ import { Briefcase } from 'lucide-react';
 
 const experiences = [
   {
-    company: 'Tech Giant Corp',
-    position: 'Senior Software Engineer',
+    company: 'Boma net',
+    position: 'Web Developer',
     period: '2021 - Present',
-    description: 'Led development of cloud-native applications, mentored junior developers, and implemented CI/CD pipelines.',
+    description: 'Led development of the company's website both the Backend and te Frontend.',
   },
   {
-    company: 'Startup Innovation',
+    company: 'Motor Mall',
     position: 'Full Stack Developer',
-    period: '2019 - 2021',
-    description: 'Built scalable microservices architecture, developed mobile apps, and managed cloud infrastructure.',
+    period: 'contract',
+    description: 'Led the Developement of the company's websit that deals with motorcycles and the spare parts',
   },
   {
-    company: 'Digital Agency',
-    position: 'Frontend Developer',
-    period: '2017 - 2019',
-    description: 'Created responsive web applications, implemented design systems, and optimized performance.',
-  },
+    Other works include contracts 
+  }
 ];
 
 export default function Experience() {
