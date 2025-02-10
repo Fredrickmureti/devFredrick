@@ -26,7 +26,7 @@ function App() {
         <Skills />
         <Services />
         <Projects /> 
-        <Timeline/>
+        <Experience />
         <Certificates />
         {/* <Testimonials/> */}
         <Blog/>
