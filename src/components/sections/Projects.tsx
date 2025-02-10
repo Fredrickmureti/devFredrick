@@ -17,6 +17,14 @@ const projects = [
     demoUrl: 'https://readme-generator-pro.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/Readme_Generator_Pro',
   },
+  {
+    title: 'Dev Utils Hub',
+    description: 'A comprehensive collection of developer utilities designed to streamline your workflow. This application provides various tools that developers frequently need, all in one place.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739184931/Macbook-Air-dev-utils-hub.vercel.app_wux06h.png',
+    tags: ['React', 'Tailwind CSS', 'Typescript', ],
+    demoUrl: 'https://dev-utils-hub.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/Dev_Utils_Hub',
+  },
 ];
 
 const ProjectCard = ({ title, description, image, tags, demoUrl, githubUrl, featured, stars }: any) => {
