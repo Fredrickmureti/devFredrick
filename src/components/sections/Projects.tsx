@@ -13,7 +13,7 @@ const projects = [
     title: 'Readme Generator Pro',
     description: 'A professional README generator built with React and TypeScript that helps developers create beautiful, comprehensive README files for their GitHub projects.',
     image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739184437/Macbook-Air-readme-generator-pro.vercel.app_ywjlp6.png',
-    tags: ['Javascript', 'TypeScript', 'TailwindCSS' React],
+    tags: ['Javascript', 'TypeScript', 'TailwindCSS', 'React'],
     demoUrl: 'https://readme-generator-pro.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/Readme_Generator_Pro',
   },
