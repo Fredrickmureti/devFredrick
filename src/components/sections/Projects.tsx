@@ -137,7 +137,15 @@ const projects = [
   tags: ['JavaScript', 'React', 'CSS', 'Tailwind CSS', 'Typescript'],
   demoUrl: 'https://task-manager-six-zeta.vercel.app/',
   githubUrl: 'https://github.com/Fredrickmureti/Task_Manager',
-}
+},
+  {
+    title: 'Blog Platform',
+    description: 'This project is a blog platform where users can write and publish articles. It is built with TypeScript and React, and uses Supabase for storage.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739228689/Macbook-Air-blog-woad-nine-43.vercel.app_moie3g.png',
+    tags: ['JavaScript', 'React', 'Tailwind css', 'Typescript', 'Nodejs', 'Expressjs', 'MongoDB'],
+    demoUrl: 'https://blog-woad-nine-43.vercel.app/write',
+    githubUrl: 'https://github.com/Fredrickmureti/blog',
+  },
 
 ];
 
