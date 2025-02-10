@@ -33,6 +33,14 @@ const projects = [
     demoUrl: 'https://promptshare-platform.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/promptopia-',
   },
+  {
+    title: 'Refine Dashbord',
+    description: 'This project is a data-intensive application built using the Refine.dev framework. It provides a robust and flexible platform for managing and displaying data with a modern and intuitive interface.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739185941/Macbook-Air-refine-dashboard-sigma.vercel.app_mpw0tm.png',
+    tags: ['React', 'Refine', 'Typescript', 'Tailwind CSS'],
+    demoUrl: 'https://refine-dashboard-sigma.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/REFINE-DASHBOARD'
+  },
 ];
 
 const ProjectCard = ({ title, description, image, tags, demoUrl, githubUrl, featured, stars }: any) => {
