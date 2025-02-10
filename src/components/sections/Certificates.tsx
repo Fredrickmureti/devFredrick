@@ -23,11 +23,11 @@ const certifications: Certification[] = [
   },
   {
     title: "FreeCodecamp Responsive Web design",
-    organization: "Google Cloud",
+    organization: "FreeCodeCamp",
     date: "2023",
-    logo: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&q=80&w=200",
-    credentialUrl: "#",
-    description: "Expert-level certification for Google Cloud architecture"
+    logo: "https://res.cloudinary.com/db3m7jneg/image/upload/v1739227241/WEB_DESIGN_sche0m.png",
+    credentialUrl: "https://www.freecodecamp.org/certification/devFredrickmureti/responsive-web-design",
+    description: "Expert-level certification for Responsive web design"
   },
   {
     title: "FreeCodeCamp FrontendDevelopment Libraries",
