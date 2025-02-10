@@ -3,21 +3,28 @@ import { Briefcase } from 'lucide-react';
 
 const experiences = [
   {
-    company: 'Boma net',
+    company: 'Boma Net',
     position: 'Web Developer',
     period: '2021 - Present',
-    description: 'Led development of the company's website both the Backend and te Frontend.',
+    description:
+      'Spearheaded the development of Boma Net’s website, creating robust backend services and intuitive frontend interfaces that enhanced user engagement.',
   },
   {
     company: 'Motor Mall',
     position: 'Full Stack Developer',
-    period: 'contract',
-    description: 'Led the Developement of the company's websit that deals with motorcycles and the spare parts',
+    period: 'Contract',
+    description:
+      'Architected and implemented a dynamic website for a motorcycle and spare parts enterprise, significantly boosting online presence and customer interaction.',
   },
   {
-    Other works include contracts 
-  }
+    company: 'Freelance Projects',
+    position: 'Contract Developer',
+    period: 'Various',
+    description:
+      'Collaborated with diverse clients on bespoke contracts, delivering innovative web solutions tailored to unique business requirements.',
+  },
 ];
+
 
 export default function Experience() {
   return (
