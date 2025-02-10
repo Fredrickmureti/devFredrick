@@ -57,6 +57,14 @@ const projects = [
     demoUrl: 'https://erp-system-tan.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/ERP_SYSTEM-',
   },
+    {
+    title: '25 + 5 Clock',
+    description: 'This project is a Pomodoro-style clock built with React. The 25 + 5 clock features a 25-minute work session followed by a 5-minute break session. The clock counts down each session and automatically switches between work and break modes.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739223122/Macbook-Air-javascript-clock-cyan.vercel.app_qed7tc.png',
+    tags: ['JavaScript', 'React', 'CSS'],
+    demoUrl: 'https://javascript-clock-cyan.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/javascript_clock',
+  },
 ];
 
 
