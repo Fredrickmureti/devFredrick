@@ -68,9 +68,9 @@ const projects = [
    {
     title: 'Markdown Previewer',
     description: 'A simple Markdown Previewer built with React that allows users to write and preview Markdown content in real-time. The application includes features for toggling between full-screen modes for the editor and the previewer.',
-    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739223122/Macbook-Air-javascript-clock-cyan.vercel.app_qed7tc.png',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739223871/Macbook-Air-markdown-previewer-roan-seven.vercel.app_tmqug7.png',
     tags: ['JavaScript', 'React', 'CSS'],
-    demoUrl: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739223871/Macbook-Air-markdown-previewer-roan-seven.vercel.app_tmqug7.png',
+    demoUrl: 'https://markdown-previewer-roan-seven.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/Markdown-previewer',
   },
 ];
