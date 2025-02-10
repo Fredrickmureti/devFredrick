@@ -49,6 +49,14 @@ const projects = [
     demoUrl: 'https://exercise-tracker-arena.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/exercise-tracker',
   },
+   {
+    title: 'ERP System',
+    description: 'A **comprehensive ERP system** designed to streamline project management and team collaboration. It enables members to track active projects, monitor individual and team workload, optimize resource utilization, and manage tasks efficiently—all within a centralized platform.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739190004/Macbook-Air-erp-system-tan.vercel.app_1_zuhcd3.png',
+    tags: ['JavaScript', 'TypeScript', 'TailwindCSS', 'React', 'Superbase'],
+    demoUrl: 'https://erp-system-tan.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/ERP_SYSTEM-',
+  },
 ];
 
 
