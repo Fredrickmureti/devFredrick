@@ -89,6 +89,14 @@ const projects = [
     demoUrl: 'https://candy-crush-gilt.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/CANDY_CRUSH',
   },
+  {
+    title: 'Quote Generator',
+    description: 'A simple React application that fetches quotes from an API and displays them with options to tweet or post them on Tumblr. The background color changes with each new quote. This project also integrates FontAwesome icons for social media link.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739224922/Macbook-Air-quote-machine-alpha.vercel.app_pxct5e.png',
+    tags: ['JavaScript', 'React', 'CSS'],
+    demoUrl: 'https://candy-crush-gilt.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/quote-machine',
+  },
 ];
 
 
