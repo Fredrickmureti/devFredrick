@@ -41,6 +41,14 @@ const projects = [
     demoUrl: 'https://refine-dashboard-sigma.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/REFINE-DASHBOARD'
   },
+  {
+    title: 'Exrecise Tracker App',
+    description: '',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739186607/Macbook-Air-exercise-tracker-arena.vercel.app_dg89u9.png',
+    tags: ['React', 'CSS', 'Javascript', 'Nodejs', 'Express', 'MongoDB'],
+    demoUrl: 'https://exercise-tracker-arena.vercel.app',
+    githubUrl: 'https://github.com/Fredrickmureti/exercise-tracker'
+  },
 ];
 
 const ProjectCard = ({ title, description, image, tags, demoUrl, githubUrl, featured, stars }: any) => {
