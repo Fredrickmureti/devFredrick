@@ -19,11 +19,19 @@ const projects = [
   },
   {
     title: 'Dev Utils Hub',
-    description: 'A comprehensive collection of developer utilities designed to streamline your workflow. This application provides various tools that developers frequently need, all in one place.',
+    description: '',
     image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739184931/Macbook-Air-dev-utils-hub.vercel.app_wux06h.png',
     tags: ['React', 'Tailwind CSS', 'Typescript', ],
     demoUrl: 'https://dev-utils-hub.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/Dev_Utils_Hub',
+  },
+  {
+     title: 'Share Prompts',
+    description: 'Share Prompts is a web application that allows users to share and explore creative prompts. This project is built using Next.js, React, and Tailwind CSS, with MongoDB as the database.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739185594/Macbook-Air-promptshare-platform.vercel.app_zb5nhx.png',
+    tags: ['React', 'Tailwind CSS', 'Typescript', 'Nextjs', MongoDB', 'Javascript' ],
+    demoUrl: 'https://promptshare-platform.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/promptopia-',
   },
 ];
 
