@@ -51,7 +51,7 @@ const projects = [
   },
    {
     title: 'ERP System',
-    description: 'A **comprehensive ERP system** designed to streamline project management and team collaboration. It enables members to track active projects, monitor individual and team workload, optimize resource utilization, and manage tasks efficiently—all within a centralized platform.',
+    description: 'A comprehensive ERP system designed to streamline project management and team collaboration. It enables members to track active projects, monitor individual and team workload, optimize resource utilization, and manage tasks efficiently—all within a centralized platform.',
     image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739190004/Macbook-Air-erp-system-tan.vercel.app_1_zuhcd3.png',
     tags: ['JavaScript', 'TypeScript', 'TailwindCSS', 'React', 'Superbase'],
     demoUrl: 'https://erp-system-tan.vercel.app/',
@@ -64,6 +64,14 @@ const projects = [
     tags: ['JavaScript', 'React', 'CSS'],
     demoUrl: 'https://javascript-clock-cyan.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/javascript_clock',
+  },
+   {
+    title: 'Markdown Previewer',
+    description: 'A simple Markdown Previewer built with React that allows users to write and preview Markdown content in real-time. The application includes features for toggling between full-screen modes for the editor and the previewer.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739223122/Macbook-Air-javascript-clock-cyan.vercel.app_qed7tc.png',
+    tags: ['JavaScript', 'React', 'CSS'],
+    demoUrl: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739223871/Macbook-Air-markdown-previewer-roan-seven.vercel.app_tmqug7.png',
+    githubUrl: 'https://github.com/Fredrickmureti/Markdown-previewer',
   },
 ];
 
