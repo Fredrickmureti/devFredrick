@@ -121,6 +121,24 @@ const projects = [
     demoUrl: 'https://market-analysis-platfom-front-end.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/market-analysis-platfom',
   },
+  {
+  title: 'TaskMaster Pro',
+  description: `TaskMaster Pro is a powerful task management application designed to enhance productivity. It enables users to:
+
+  ✅ **Set Reminders** – Get timely notifications to stay on top of important tasks.  
+  ✅ **Real-Time Calendar** – View an up-to-date calendar for better planning.  
+  ✅ **Activity Tracking** – Monitor daily tasks and track progress effortlessly.  
+  ✅ **Completion Rate Analysis** – Measure task completion over time.  
+  ✅ **Weekly Growth Insights** – Analyze trends and improve efficiency.  
+  ✅ **Task Management** – Easily add, update, and organize your to-do list.  
+
+  TaskMaster Pro helps users stay organized, focused, and productive. 🚀`,
+  image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739226216/Macbook-Air-task-manager-six-zeta.vercel.app_p9gf5k.png',
+  tags: ['JavaScript', 'React', 'CSS', 'Tailwind CSS', 'Typescript'],
+  demoUrl: 'https://task-manager-six-zeta.vercel.app/',
+  githubUrl: 'https://github.com/Fredrickmureti/Task_Manager',
+}
+
 ];
 
 
