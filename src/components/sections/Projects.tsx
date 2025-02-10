@@ -81,6 +81,14 @@ const projects = [
     demoUrl: 'https://drum-machine-two-pi.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/Drum-Machine',
   },
+  {
+    title: 'Candy Crush Game 🍬',
+    description: 'A fun Candy Crush game implemented in HTML, CSS, and JavaScript, featuring colorful candies, scoring, and streak tracking. The game includes swipe functionality for mobile devices, music control, and more.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739224514/Galaxy-Tab-S7-candy-crush-gilt.vercel.app_pnfxas.png',
+    tags: ['JavaScript', 'HTML', 'CSS'],
+    demoUrl: 'https://candy-crush-gilt.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/CANDY_CRUSH',
+  },
 ];
 
 
