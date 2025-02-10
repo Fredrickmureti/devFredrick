@@ -97,6 +97,14 @@ const projects = [
     demoUrl: 'https://candy-crush-gilt.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/quote-machine',
   },
+   {
+    title: 'Tic-Tac-Toe Game with Background Music 🎵',
+    description: 'This project is a Tic-Tac-Toe game with a polished user interface, customizable player names, and background music. The music changes automatically as each track finishes and can be toggled on or off. The game is built with HTML, CSS, and JavaScript, creating a fun and interactive experience!',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739225174/Macbook-Air-tic-tac-toe-hazel-five.vercel.app_kftlgv.png',
+    tags: ['JavaScript', 'HTML', 'CSS'],
+    demoUrl: 'https://tic-tac-toe-hazel-five.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/Tic-Tac-Toe',
+  },
 ];
 
 
