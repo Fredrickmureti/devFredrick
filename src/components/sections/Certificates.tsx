@@ -31,11 +31,11 @@ const certifications: Certification[] = [
   },
   {
     title: "FreeCodeCamp FrontendDevelopment Libraries",
-    organization: "Meta",
+    organization: "FreeCodeCamp",
     date: "2022",
-    logo: "/public/Frontend_web_design.png",
-    credentialUrl: "#",
-    description: "Professional certification for React Native development"
+    logo: "https://res.cloudinary.com/db3m7jneg/image/upload/v1739227436/FRONTEND_g8izgc.png",
+    credentialUrl: "https://www.freecodecamp.org/certification/devFredrickmureti/front-end-development-libraries",
+    description: "Professional certification for Frontend Development Libraries"
   }
 ];
 
