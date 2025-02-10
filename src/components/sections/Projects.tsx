@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: 'Dev Utils Hub',
-    description: '',
+    description: 'A comprehensive collection of developer utilities designed to streamline your workflow. This application provides various tools that developers frequently need, all in one place.',
     image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739184931/Macbook-Air-dev-utils-hub.vercel.app_wux06h.png',
     tags: ['React', 'Tailwind CSS', 'Typescript', ],
     demoUrl: 'https://dev-utils-hub.vercel.app/',
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     title: 'Exrecise Tracker App',
-    description: '',
+    description: 'Exercise Tracker App is a web application that allows users to log their activities, track their exercise routines, and receive notifications when scheduled activities are due.',
     image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739186607/Macbook-Air-exercise-tracker-arena.vercel.app_dg89u9.png',
     tags: ['React', 'CSS', 'Javascript', 'Nodejs', 'Express', 'MongoDB'],
     demoUrl: 'https://exercise-tracker-arena.vercel.app',
