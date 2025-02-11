@@ -65,6 +65,14 @@ const projects = [
     demoUrl: 'https://gradient-generator-pro.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/Gradient_Generator_Pro',
   },
+  {
+    title: '3D Character Creator',
+    description: 'A powerful web-based 3D character creation tool that allows users to design and customize their own 3D characters with photo textures and various customization options.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739235920/Macbook-Air-3-d-character-creator.vercel.app_coroub.png',
+    tags: ['JavaScript', 'React',  'Tailwind CSS', 'Typescript', '3js'],
+    demoUrl: 'https://3-d-character-creator.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/3D_Character_Creator',
+  },
     {
     title: '25 + 5 Clock',
     description: 'This project is a Pomodoro-style clock built with React. The 25 + 5 clock features a 25-minute work session followed by a 5-minute break session. The clock counts down each session and automatically switches between work and break modes.',
