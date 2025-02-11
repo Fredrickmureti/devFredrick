@@ -57,6 +57,14 @@ const projects = [
     demoUrl: 'https://erp-system-tan.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/ERP_SYSTEM-',
   },
+   {
+    title: 'Gradient Generator Pro',
+    description: 'A powerful and beautiful gradient generator built with React and TypeScript that helps developers create stunning gradients visually and get the code in multiple formats.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739233854/Macbook-Air-gradient-generator-pro.vercel.app_oosrin.png',
+    tags: ['JavaScript', 'React',  'Tailwind CSS', 'Typescript'],
+    demoUrl: 'https://gradient-generator-pro.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/Gradient_Generator_Pro',
+  },
     {
     title: '25 + 5 Clock',
     description: 'This project is a Pomodoro-style clock built with React. The 25 + 5 clock features a 25-minute work session followed by a 5-minute break session. The clock counts down each session and automatically switches between work and break modes.',
