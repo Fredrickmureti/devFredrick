@@ -106,12 +106,12 @@ const projects = [
     githubUrl: 'https://github.com/Fredrickmureti/CANDY_CRUSH',
   },
   {
-    title: 'Quote Generator',
-    description: 'A simple React application that fetches quotes from an API and displays them with options to tweet or post them on Tumblr. The background color changes with each new quote. This project also integrates FontAwesome icons for social media link.',
-    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739224922/Macbook-Air-quote-machine-alpha.vercel.app_pxct5e.png',
-    tags: ['JavaScript', 'React', 'CSS'],
-    demoUrl: 'https://candy-crush-gilt.vercel.app/',
-    githubUrl: 'https://github.com/Fredrickmureti/quote-machine',
+    title: 'Meme Maestro',
+    description: 'A professional-grade meme creation tool built with React and TypeScript. Create, customize, and share memes with an intuitive interface and powerful features.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1739829147/Macbook-Air-meme-maestro.vercel.app_veo7zu.png',
+    tags:['JavaScript', 'React', 'Tailwind CSS', 'Typescript'],
+    demoUrl: 'https://meme-maestro.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/meme_maestro',
   },
    {
     title: 'Tic-Tac-Toe Game with Background Music 🎵',
