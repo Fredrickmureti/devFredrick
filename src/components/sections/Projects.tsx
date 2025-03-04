@@ -57,6 +57,14 @@ const projects = [
     demoUrl: 'https://erp-system-tan.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/ERP_SYSTEM-',
   },
+  {
+    title: 'Type Script Interface Generator',
+    description: 'This platform enables developers to quickly generate TypeScript interfaces from JSON data by simply uploading a file or pasting the content, eliminating manual coding and saving time.',
+    image: 'https://res.cloudinary.com/db3m7jneg/image/upload/v1741087788/Macbook-Air-type-script-interface-generator.vercel.app_kiygs0.png',
+    tags: ['JavaScript', 'React',  'Tailwind CSS', 'Typescript'],
+    demoUrl: 'https://type-script-interface-generator.vercel.app/',
+    githubUrl: 'https://github.com/TypeScript Interface Generator ',
+  },
    {
     title: 'Gradient Generator Pro',
     description: 'A powerful and beautiful gradient generator built with React and TypeScript that helps developers create stunning gradients visually and get the code in multiple formats.',
