@@ -1,5 +1,7 @@
+
 import { motion } from 'framer-motion';
 import { Briefcase } from 'lucide-react';
+import { useParallax } from '../../hooks/useParallax';
 
 const experiences = [
   {
@@ -7,7 +9,7 @@ const experiences = [
     position: 'Web Developer',
     period: '2021 - Present',
     description:
-      'Spearheaded the development of Boma Net’s website, creating robust backend services and intuitive frontend interfaces that enhanced user engagement.',
+      'Spearheaded the development of Boma Net's website, creating robust backend services and intuitive frontend interfaces that enhanced user engagement.',
   },
   {
     company: 'Motor Mall',
@@ -25,16 +27,35 @@ const experiences = [
   },
 ];
 
-
-
 export default function Experience() {
+  const scrollY = useParallax();
+
   return (
-    <section id="experience" className="py-20 bg-white dark:bg-gray-900">
-      <div className="max-w-6xl mx-auto px-4">
+    <section id="experience" className="py-20 relative overflow-hidden">
+      {/* Parallax Background */}
+      <motion.div 
+        className="absolute inset-0"
+        style={{
+          transform: `translateY(${scrollY * 0.2}px)`,
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-background to-muted/10" />
+        <div 
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed'
+          }}
+        />
+      </motion.div>
+
+      <div className="max-w-6xl mx-auto px-4 relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="text-4xl font-bold text-center mb-16 dark:text-white"
+          className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent"
         >
           Work Experience
         </motion.h2>
@@ -46,18 +67,22 @@ export default function Experience() {
               initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="flex gap-4 bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg"
+              className="flex gap-4 bg-card/50 backdrop-blur-sm p-6 rounded-2xl shadow-lg border hover:border-primary/30 transition-all duration-300 group"
+              style={{
+                transform: `translateY(${scrollY * (0.05 * (index + 1))}px)`,
+              }}
+              whileHover={{ y: -5, scale: 1.01 }}
             >
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center">
-                  <Briefcase className="w-6 h-6 text-purple-600 dark:text-purple-400" />
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <Briefcase className="w-6 h-6 text-primary" />
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold dark:text-white">{exp.position}</h3>
-                <p className="text-purple-600 dark:text-purple-400 mb-2">{exp.company}</p>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">{exp.period}</p>
-                <p className="text-gray-700 dark:text-gray-300">{exp.description}</p>
+                <h3 className="text-xl font-semibold text-foreground">{exp.position}</h3>
+                <p className="text-primary mb-2">{exp.company}</p>
+                <p className="text-muted-foreground text-sm mb-4">{exp.period}</p>
+                <p className="text-muted-foreground leading-relaxed">{exp.description}</p>
               </div>
             </motion.div>
           ))}
