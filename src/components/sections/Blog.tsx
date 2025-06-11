@@ -1,8 +1,10 @@
+
 import { motion } from 'framer-motion';
 import { Card } from '../ui/Card';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Tilt } from 'react-tilt';
+import { useParallax } from '../../hooks/useParallax';
 
 const blogPosts = [
   {
@@ -100,9 +102,31 @@ const BlogCard = ({ title, excerpt, image, date, readTime, category, gradient }:
 );
 
 export default function Blog() {
+  const scrollY = useParallax();
+
   return (
-    <section id="blog" className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="blog" className="py-20 relative overflow-hidden">
+      {/* Parallax Background */}
+      <motion.div 
+        className="absolute inset-0"
+        style={{
+          transform: `translateY(${scrollY * 0.15}px)`,
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-background to-muted/20" />
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed'
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+      </motion.div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

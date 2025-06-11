@@ -1,7 +1,9 @@
+
 import { motion } from 'framer-motion';
 import { Card } from '../ui/Card';
 import { Award, Calendar, ExternalLink } from 'lucide-react';
 import { Button } from '../ui/button';
+import { useParallax } from '../../hooks/useParallax';
 
 interface Certification {
   title: string;
@@ -78,9 +80,31 @@ const CertificationCard = ({ title, organization, date, logo, credentialUrl, des
 );
 
 export default function Certifications() {
+  const scrollY = useParallax();
+
   return (
-    <section className="py-20">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 relative overflow-hidden">
+      {/* Parallax Background */}
+      <motion.div 
+        className="absolute inset-0"
+        style={{
+          transform: `translateY(${scrollY * 0.15}px)`,
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-background to-primary/5" />
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed'
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+      </motion.div>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

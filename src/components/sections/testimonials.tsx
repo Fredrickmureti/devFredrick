@@ -1,9 +1,11 @@
+
 "use client";
 
 import { motion } from 'framer-motion';
 import { Card } from '../ui/Card';
 import { Avatar } from '../ui/avatar';
 import { Quote } from 'lucide-react';
+import { useParallax } from '../../hooks/useParallax';
 
 interface Testimonial {
   name: string;
@@ -61,9 +63,31 @@ const TestimonialCard = ({ name, role, image, content }: Testimonial) => (
 );
 
 export default function Testimonials() {
+  const scrollY = useParallax();
+
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 relative overflow-hidden">
+      {/* Parallax Background */}
+      <motion.div 
+        className="absolute inset-0"
+        style={{
+          transform: `translateY(${scrollY * 0.2}px)`,
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-background to-primary/5" />
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed'
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+      </motion.div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
