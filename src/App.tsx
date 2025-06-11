@@ -1,3 +1,4 @@
+
 import { Suspense } from 'react';
 import Navbar from './components/layout/Navbar';
 import Hero from './components/sections/Hero';
@@ -11,9 +12,7 @@ import Footer from './components/sections/Footer';
 import LoadingSpinner from './components/ui/LoadingSpinner';
 import { ThemeProvider } from './components/ui/theme-provider';
 // import Testimonials from './components/sections/testimonials';
-import Blog from './components/sections/Blog';
 import Contact from './components/sections/Contact';
-import Timeline from './components/sections/timeline';
 
 function App() {
   return (
@@ -29,7 +28,6 @@ function App() {
         <Experience />
         <Certificates />
         {/* <Testimonials/> */}
-        {/*<Blog/> */}
         <Contact/>
         <Footer />
       </Suspense>
