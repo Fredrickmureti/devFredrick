@@ -1,27 +1,57 @@
+
 "use client";
 
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import { motion } from 'framer-motion';
 import { Button } from '../ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import Scene from '../3d/Scene';
+
+const socialLinks = [
+  { icon: Github, href: 'https://github.com/Fredrickmureti', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/fredrick-mureti-95bb5423a', label: 'LinkedIn' },
+  { icon: Mail, href: 'mailto:fredrickmureti612@gmail.com', label: 'Email' }
+];
 
 export default function Hero() {
   return (
-    <section className="min-h-screen relative overflow-hidden">
+    <section className="min-h-screen relative overflow-hidden bg-gradient-to-br from-background via-primary/5 to-purple-600/10">
       {/* 3D Background */}
-      <div className="absolute inset-0 -z-10 opacity-50">
+      <div className="absolute inset-0 -z-10 opacity-40">
         <Canvas>
           <PerspectiveCamera makeDefault position={[0, 0, 5]} />
           <OrbitControls
             enableZoom={false}
             enablePan={false}
             autoRotate
-            autoRotateSpeed={0.5}
+            autoRotateSpeed={0.8}
           />
           <Scene />
         </Canvas>
+      </div>
+
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 -z-5">
+        {[...Array(6)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-2 h-2 bg-primary/20 rounded-full"
+            initial={{
+              x: Math.random() * window.innerWidth,
+              y: Math.random() * window.innerHeight,
+            }}
+            animate={{
+              x: Math.random() * window.innerWidth,
+              y: Math.random() * window.innerHeight,
+            }}
+            transition={{
+              duration: 20 + Math.random() * 10,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+          />
+        ))}
       </div>
 
       {/* Content */}
@@ -32,48 +62,111 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
+              className="space-y-8"
             >
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600" style={{
-                color: "black"
-              }}>Hey, Fredrick here <br/>
-                Full-Stack Developer
-              </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed" style={{color: "black"}}>
-                Crafting exceptional digital experiences with modern technologies and innovative solutions.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-gradient-to-r from-primary to-purple-600" asChild>
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >
+                <h1 className="text-5xl md:text-7xl font-bold mb-6">
+                  <span className="block text-foreground">Hey, I'm</span>
+                  <span className="block bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">
+                    Fredrick
+                  </span>
+                </h1>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              >
+                <p className="text-2xl md:text-3xl font-semibold text-primary mb-4">
+                  Full-Stack Developer
+                </p>
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-lg">
+                  Crafting exceptional digital experiences with modern technologies, 
+                  innovative solutions, and pixel-perfect designs that bring ideas to life.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="flex flex-wrap gap-4"
+              >
+                <Button size="lg" className="bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90 text-white shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                   <a href="#projects">
-                    View Projects
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    View My Work
+                    <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
-                  <a href="#contact">Get in Touch</a>
+                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300" asChild>
+                  <a href="#contact">
+                    <Download className="mr-2 h-5 w-5" />
+                    Download CV
+                  </a>
                 </Button>
-              </div>
+              </motion.div>
+
+              {/* Social Links */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="flex gap-4 pt-4"
+              >
+                {socialLinks.map((link, index) => (
+                  <motion.a
+                    key={index}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-card/50 backdrop-blur-sm rounded-full border hover:border-primary/50 transition-all duration-300 group"
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <link.icon className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+                  </motion.a>
+                ))}
+              </motion.div>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
-              className="relative"
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="relative flex justify-center"
             >
-              <div className="relative w-72 h-72 mx-auto lg:w-96 lg:h-96">
-                <img
-                  src="https://avatars.githubusercontent.com/u/121539435?v=4"
-                  alt="Developer Portrait"
-                  className="absolute inset-0 w-full h-full rounded-full object-cover shadow-2xl"
+              <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+                <motion.div
+                  animate={{ 
+                    rotate: 360,
+                  }}
+                  transition={{
+                    duration: 20,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                  className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 to-purple-600/20 blur-xl"
                 />
-                <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-purple-600/20" />
+                <motion.img
+                  src="https://avatars.githubusercontent.com/u/121539435?v=4"
+                  alt="Fredrick Mureti - Full Stack Developer"
+                  className="relative w-full h-full rounded-full object-cover shadow-2xl z-10 border-4 border-primary/20"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/10 to-purple-600/10 z-20" />
               </div>
             </motion.div>
           </div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Enhanced Scroll Indicator */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -81,16 +174,19 @@ export default function Hero() {
           duration: 0.8,
           repeat: Infinity,
           repeatType: "reverse"
-          
-        }}
-        style={{
-          backgroundColor: "aqua",
-          borderRadius: "20px",
         }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
       >
-        <div className="w-6 h-10 border-2 border-primary rounded-full p-1">
-          <div className="w-1.5 h-1.5 bg-primary rounded-full animate-bounce mx-auto" />
+        <div className="w-6 h-10 border-2 border-primary rounded-full p-1 bg-card/30 backdrop-blur-sm">
+          <motion.div 
+            className="w-1.5 h-1.5 bg-primary rounded-full mx-auto"
+            animate={{ y: [0, 16, 0] }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
         </div>
       </motion.div>
     </section>
