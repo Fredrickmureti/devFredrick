@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Canvas } from '@react-three/fiber';
@@ -7,6 +6,7 @@ import { motion } from 'framer-motion';
 import { Button } from '../ui/button';
 import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import Scene from '../3d/Scene';
+import ErrorBoundary from '../ui/ErrorBoundary';
 
 const socialLinks = [
   { icon: Github, href: 'https://github.com/Fredrickmureti', label: 'GitHub' },
@@ -19,16 +19,18 @@ export default function Hero() {
     <section className="min-h-screen relative overflow-hidden bg-gradient-to-br from-background via-primary/5 to-purple-600/10">
       {/* 3D Background */}
       <div className="absolute inset-0 -z-10 opacity-40">
-        <Canvas>
-          <PerspectiveCamera makeDefault position={[0, 0, 5]} />
-          <OrbitControls
-            enableZoom={false}
-            enablePan={false}
-            autoRotate
-            autoRotateSpeed={0.8}
-          />
-          <Scene />
-        </Canvas>
+        <ErrorBoundary fallback={<div className="w-full h-full bg-gradient-to-br from-primary/5 to-purple-600/5" />}>
+          <Canvas>
+            <PerspectiveCamera makeDefault position={[0, 0, 5]} />
+            <OrbitControls
+              enableZoom={false}
+              enablePan={false}
+              autoRotate
+              autoRotateSpeed={0.8}
+            />
+            <Scene />
+          </Canvas>
+        </ErrorBoundary>
       </div>
 
       {/* Animated Background Elements */}
