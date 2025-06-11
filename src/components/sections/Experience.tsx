@@ -9,7 +9,7 @@ const experiences = [
     position: 'Web Developer',
     period: '2021 - Present',
     description:
-      'Spearheaded the development of Boma Net's website, creating robust backend services and intuitive frontend interfaces that enhanced user engagement.',
+      'Spearheaded the development of Boma Net website, creating robust backend services and intuitive frontend interfaces that enhanced user engagement.',
   },
   {
     company: 'Motor Mall',
