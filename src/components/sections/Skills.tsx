@@ -88,11 +88,11 @@ export default function Skills() {
 
   return (
     <section id="skills" className="py-20 relative overflow-hidden">
-      {/* Parallax Background */}
-      <motion.div 
-        className="absolute inset-0"
+      {/* Optimized Parallax Background */}
+      <div 
+        className="absolute inset-0 will-change-transform"
         style={{
-          transform: `translateY(${scrollY * 0.3}px)`,
+          transform: `translate3d(0, ${scrollY * 0.1}px, 0)`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background/50 to-primary/5" />
@@ -102,11 +102,10 @@ export default function Skills() {
             backgroundImage: 'url(https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            backgroundAttachment: 'fixed'
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-      </motion.div>
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div

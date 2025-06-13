@@ -1,13 +1,12 @@
-
 import { motion } from 'framer-motion';
-import { Code2, Palette, Terminal, Award, Users, Coffee } from 'lucide-react';
+import { Code2, Palette, Terminal, Award, Users, Briefcase } from 'lucide-react';
 import { Card } from '../ui/Card';
 
 const stats = [
   { icon: Code2, label: 'Projects Completed', value: '50+' },
   { icon: Users, label: 'Happy Clients', value: '30+' },
   { icon: Award, label: 'Years Experience', value: '2+' },
-  { icon: Coffee, label: 'Cups of Coffee', value: '1000+' }
+  { icon: Briefcase, label: 'Technologies Mastered', value: '15+' }
 ];
 
 const highlights = [
