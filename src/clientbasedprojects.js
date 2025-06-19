@@ -45,7 +45,7 @@ const clientBasedProjects =  [
     imageUrl: ['/macbook-Air-tour-kenya.vercel.app.png', '/macbook-Air-tour-kenya.vercel.app (1).png'],
     liveUrl: 'https://tour-kenya.vercel.app/',
     githubUrl: 'https://github.com/Fredrickmureti/tour-kenya',
-    description: 'A website for a bus booking and reservation system. The frontend is built with React, Shadcn, Tailwind CSS, and JavaScript, with a Supabase backend. It includes a full-blown admin dashboard, allowing admins to control all aspects of the website, from the footer and header to projects, products, services, and the contact page, without needing to contact a developer.',
+    description: 'A website for a bus booking and reservation system. The user can anage their bookings and there is superadmin who can creates branches and assigns the respective admins to oversee  the branches they are assigned',
     isPrivate: false
 }
 
