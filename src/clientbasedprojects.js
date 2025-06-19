@@ -31,6 +31,14 @@ const clientBasedProjects =  [
     githubUrl: 'https://github.com/Fredrickmureti/masinde-financial-focus',
     description: 'This is a website for an accounting firm that provides financial services to individuals and businesses. The website is designed to showcase the firm\'s services, expertise, and client testimonials. It also includes a user-friendly interface for clients to access their accounts, view financial reports, and communicate with the firm\'s staff.',
     isPrivate: true
+},
+{
+    name: 'Martka Petro',
+    imageUrl: ['/Macbook-Air-martka-petro-64gvif11o-fredrick-lugards-projects.vercel.app.png', '/Macbook-Air-martka-petro-64gvif11o-fredrick-lugards-projects.vercel.app (1).png'],
+    liveUrl: 'https://martka-petro-64gvif11o-fredrick-lugards-projects.vercel.app/',
+    githubUrl: 'https://github.com/Fredrickmureti/martka-petro',
+    description: 'A website for a company that deals with petroleum products. The frontend is built with React, Shadcn, Tailwind CSS, and JavaScript, with a Supabase backend. It includes a full-blown admin dashboard, allowing admins to control all aspects of the website, from the footer and header to projects, products, services, and the contact page, without needing to contact a developer.',
+    isPrivate: true
 }
 
 ]
